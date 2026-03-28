@@ -1,0 +1,86 @@
+{
+  "version": "1.0.0",
+  "description": "用户 API Key 配置（改进版）",
+  "users": [
+    {
+      "id": "admin",
+      "api_key": "sk-admin-7x9a2b8c3d4e5f6g",
+      "name": "系统管理员",
+      "email": "admin@company.com",
+      "role": "admin",
+      "rate_limit": 1000
+    },
+    {
+      "id": "developer1",
+      "api_key": "sk-dev1-1a2b3c4d5e6f7g8h",
+      "name": "开发人员1",
+      "email": "dev1@company.com",
+      "role": "developer",
+      "rate_limit": 200
+    },
+    {
+      "id": "developer2",
+      "api_key": "sk-dev2-9i8h7g6f5e4d3c2b",
+      "name": "开发人员2",
+      "email": "dev2@company.com",
+      "role": "developer",
+      "rate_limit": 200
+    },
+    {
+      "id": "tester1",
+      "api_key": "sk-test1-a1b2c3d4e5f6g7h8",
+      "name": "测试人员1",
+      "email": "tester1@company.com",
+      "role": "tester",
+      "rate_limit": 100
+    },
+    {
+      "id": "tester2",
+      "api_key": "sk-test2-b2c3d4e5f6g7h8i9",
+      "name": "测试人员2",
+      "email": "tester2@company.com",
+      "role": "tester",
+      "rate_limit": 100
+    },
+    {
+      "id": "product1",
+      "api_key": "sk-prod1-c3d4e5f6g7h8i9j0",
+      "name": "产品经理1",
+      "email": "product1@company.com",
+      "role": "product_manager",
+      "rate_limit": 150
+    },
+    {
+      "id": "product2",
+      "api_key": "sk-prod2-d4e5f6g7h8i9j0k1",
+      "name": "产品经理2",
+      "email": "product2@company.com",
+      "role": "product_manager",
+      "rate_limit": 150
+    },
+    {
+      "id": "customer1",
+      "api_key": "sk-cust1-e5f6g7h8i9j0k1l2",
+      "name": "客户代表1",
+      "email": "customer1@company.com",
+      "role": "customer_rep",
+      "rate_limit": 50
+    },
+    {
+      "id": "customer2",
+      "api_key": "sk-cust2-f6g7h8i9j0k1l2m3",
+      "name": "客户代表2",
+      "email": "customer2@company.com",
+      "role": "customer_rep",
+      "rate_limit": 50
+    },
+    {
+      "id": "guest",
+      "api_key": "sk-guest-g7h8i9j0k1l2m3n4",
+      "name": "访客用户",
+      "email": "guest@company.com",
+      "role": "guest",
+      "rate_limit": 10
+    }
+  ]
+}
