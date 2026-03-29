@@ -20,10 +20,10 @@
 ✅ 支持流式输出  
 ✅ 自动上下文裁剪  
 ## 📄版本说明
-01 版	函数式编程范本，三种原始模式（cli/ui/api）  
-02 版	类方法封装，四种模式（cli/ui/api/ui+api）  
-03 版	vLLM 加速版本（需 Linux 环境）  
-04 版	vLLM Docker API 版本（最终推荐）  
+01 版：	函数式编程范本，三种原始模式（cli/ui/api）  
+02 版：	类方法封装，四种模式（cli/ui/api/ui+api）  
+03 版：	vLLM 加速版本（需 Linux 环境）  
+04 版：	vLLM Docker API 版本（最终推荐）  
 ## 🛠️环境要求
 Python 3.9+  
 CUDA 11.8+（GPU 推理）  
@@ -47,7 +47,7 @@ docker run --gpus all -it --rm \
   -v /your/model/path:/models \  
   -p 8001:8000 \  
   vllm/vllm-openai:latest \  
-  --model /models/DeepSeek-R1 # 依据下方网址验证提供的模型id  
+  --model /models/DeepSeek-R1  
 ### 3️⃣ 验证
 curl http://127.0.0.1:8001/v1/models  
 ## 📊性能优化
@@ -56,23 +56,23 @@ curl http://127.0.0.1:8001/v1/models
 启用 FP16 混合精度：减少显存占用  
 使用量化模型：如 GPTQ、AWQ 量化版本  
 ## 🔧故障排查
-1.CUDA out of memory  
+1、CUDA out of memory  
 减小 max_context_length 和 max_new_tokens  
 调整 vLLM 的 gpu_memory_utilization 参数  
-2.vLLM 连接失败  
+2、vLLM 连接失败  
 检查 vLLM 容器是否正常运行  
 确认端口映射是否正确  
 验证模型路径是否正确  
-3.API Key 认证失败  
+3、API Key 认证失败  
 检查 api_config.json 格式是否正确  
 确认请求头包含 Authorization: Bearer <key>  
 ## 📝日志查看
-1.查看服务日志  
+1、查看服务日志  
 tail -f chatbot.log  
-2.设置日志级别  
-export LOG_LEVEL=DEBUG  
+2、设置日志级别  
+export LOG_LEVEL=DEBUG/INFO/WARNING/ERROR/CRITICAL  
 ## 🤝 贡献指南
-感谢你对本项目的关注！本项目致力于构建一个工程化、可扩展的大模型私有化部署框架，欢迎任何形式的贡献 ！  
+感谢您对本项目的关注！本项目致力于构建一个工程化、可扩展的大模型私有化部署框架，欢迎任何形式的贡献 ！  
 🌐 贡献方式：  
 🐛 提交 Bug（Issue）  
 💡 提出新功能 / 改进建议  
@@ -83,11 +83,11 @@ export LOG_LEVEL=DEBUG
 ## 📄 许可证
 本项目采用 MIT 许可证，详见 LICENSE 文件。
 ## 📧 联系方式
+作者邮箱：[1751876639@qq.com]  
 项目主页：[GitHub (https://github.com/YhongTl)]  
-作者邮箱：[175186639@qq.com]  
 ## 🙏 致谢
-DeepSeek - 提供强大的基础模型  
+DeepSeek - 提供强大的基础模型作为项目测试  
 vLLM - 高性能推理引擎  
 Gradio - Web UI 框架  
 FastAPI - API 框架  
-## 由选手"躲后面抠脚"实力开发，持续迭代中, 后续功能敬请期待...
+## 由选手"躲后面抠脚"实力开发，持续迭代中，后续功能敬请期待...
